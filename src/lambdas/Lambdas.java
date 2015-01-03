@@ -48,6 +48,9 @@ public class Lambdas {
 		System.out.println(callable.call());
 		
 		
+		/* using custom functional interface */
+		MyTestFunctionalInterface test = (String name, String lastName) -> String.format("My Functional Interface says hello to: [Name: %s, Last Name: %s]", name, lastName);
+		System.out.println(test.sayHello("Joao", "Ribeiro"));
 		
 		
 		
